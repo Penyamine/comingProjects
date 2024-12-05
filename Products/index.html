@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../demo/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="landing">
+        <div id="first-slide">
+        <header>
+            <div class="icon">
+                <img class="logo-icon" src="../static/images/logo.png" alt="Logo">
+            </div>
+            <nav>        
+                <a href="#first-slide">Home</a>
+                <a href="#second-slide">About</a>
+                <a href="#third-slide">Services</a>
+                <a href="#fourth-slide">Products</a>
+                <a href="#fifth-slide">Support</a>
+            </nav>
+            <button class="Contact_btn">Contact Us</button>
+        </header>    
+        
+        <hr>
+    
+    <div class="search">
+        <input type="search" name="search" id="search" >
+    </div>
+
+    <div class="mainText">
+        <div class="mainImage">
+            <img src="../static/images/logo.png" alt="Logo" srcset="">
+        </div>
+        
+        <div class="welcomeDesc">
+            Welcome to Deemas Groups import and Export 
+            innovative Services
+        </div>
+        
+        <div class="mainDesc">
+            Trades Brings People Together and builds bridges 
+            across cultures
+        </div>
+        <div class="desc">
+            We specialize in seemless import and export services ,connecting
+            business globally.With Reliable logistics,quality assurance and 
+            timely deliveries.We ensure smooth trade across borders.
+            Trust us to handle your international shipping needs with efficiency and care.
+        </div>
+    </div>
+    </div>
+    <div class ="after-first-slide">
+
+    </div>
+    <div id="second-slide"> 
+        <div class="about-deemas"> About Deemas </div> 
+        <div class="content-wrapper"> 
+            <div class="about-content"> 
+                <h2>Get To Know Us</h2> 
+                <div class="brief-desc-about-deemas"> 
+                    We specialize in seamless import and export services, 
+                    connecting businesses globally. With reliable logistics, 
+                    quality assurance, and timely deliveries, 
+                    we ensure smooth trade across borders. Trust us to handle your international 
+                    shipping needs with efficiency and care. 
+                </div> 
+                <span id="more-text" class="hidden"> 
+                    Our team of experts works around the clock to ensure that your goods reach their destination safely and on time.
+                     We provide comprehensive customs brokerage services, detailed tracking,
+                     and customer support to ensure your satisfaction every step of the way.
+                </span>
+                <button class="read-more-btn-slide2" onclick="toggleText()">Read More</button> 
+            </div>
+            <div class="delivery-image"> 
+                <img src="../static/images/image2.jpg" alt="delivery-image" srcset=""> 
+            </div> 
+     
+        </div> 
+        <script>
+            function toggleText() {
+                const moreText = document.getElementById("more-text");
+                const btnText = document.querySelector(".read-more-btn-slide2");
+
+                if (moreText.classList.contains("hidden")) {
+                moreText.classList.remove("hidden");
+                btnText.textContent = "Read Less";
+                }
+                else {
+                    moreText.classList.add("hidden");
+                    btnText.textContent = "Read More";
+                }
+            }
+        </script>        
+    </div>
+    <div id="third-slide">
+        <div class ="services">
+        
+            <div class="service-item">
+                <div class="service-icon"></div>
+                <div class="service-name">IMPORT</div>
+                <div class="service-item-desc">Importing is not just about bringing goods into a country ,
+                    it's about enriching your business and culture
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="service-icon"></div>
+                <div class="service-name">EXPORT</div>
+                <div class="service-item-desc">Successful companies don't just expoort products 
+                    -they export trust and import growth</div>
+            </div>
+            <div class="service-item">
+                <div class="service-icon"></div>
+                <div class="service-name">TRANSPORT</div>
+                <div class="service-item-desc">Trust in transport is built on timely delivery,safety, and consistency</div>
+            </div>
+            <div class="service-item">
+                <div class="service-icon"></div>
+                <div class="service-name">ASSURANCE</div>
+                <div class="service-item-desc">Customer satisfaction isn't just a goal;it's out guarantee</div>
+            </div>
+        </div>
+        <div class="desc-about-services">
+            <div class="desc-content">
+                <h2 id="desc-services-head">Services We can Offer You !</h2>
+                <div class="services-desc">
+                    We specialize in seemless import and export services ,connecting
+                    business globally.With Reliable logistics,quality assurance and 
+                    timely deliveries.We ensure smooth trade across borders.
+                    Trust us to handle your international shipping needs with efficiency and care.
+                </div>            
+    
+            </div>
+        </div>
+    </div>
+
+    <div id="fourth-slide">
+
+        <div class ="our-products">
+            Our Products
+        </div>
+        <br>
+        <div class="products">
+            <h2><span style="color:rgb(245, 41, 41)">Our Products </span>We have Provided</h2>
+
+            <template id="product-template">
+                <div class="product-card">
+                    <div class="product-left-div">
+                        <div class="left-contain">
+                            <img src="" alt="" srcset="" class="product-image">
+                            <button for="stock-btn" id="stock-btn">Out Of Stock</button>    
+                        </div>
+                    </div>
+                    <div class="product-right-div">
+                        <div class="product-title"></div>
+                        <div class="product-description"></div>    
+                        <div class="contact-to-buy">
+                            <button type="button" class="buy-to-contact-btn">Buy To Contact</button>
+                            <img src="" alt="Whatshap">
+                        </div>
+                    </div>
+                </div>
+            </template>
+            <div class="product-list">
+
+            </div>
+    
+        </div>
+
+    </div>
+        <div id="fifth-slide">
+        <div>
+            <h1>What Our <span style="color: red;">Customer</span> <br> Say About Us</h1>
+        </div>
+        <div id="feedback">
+            <div class="testimonial-item">
+                <div class="testimonial-icon">“</div>
+                <div class="name">Murugan</div>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <div class="feedback-discription">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, quos?
+                </div>
+            </div>
+            <div class="testimonial-item">
+                <div class="testimonial-icon">“</div>
+                <div class="name">Vijay</div>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <div class="feedback-discription">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, asperiores!
+                </div>
+            </div>
+            <div class="testimonial-item">
+                <div class="testimonial-icon">“</div>
+                <div class="name">Saravanan</div>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <div class="feedback-discription">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, error!
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sixth-slide">
+        <h4>Contact Us</h4>
+        <h1>
+            <span style="color: red;">Contact</span> Us & We Can <br> Work Together
+        </h1>
+        <p>Contact us today for reliable import and export solutions tailored to your business needs.</p>
+        <form action="../mailphp.php" id="contact-form" method="POST">
+            <input type="text" name="name" id="contact-name" placeholder="Your Name" required> 
+            <input type="email" name="email" id="contact-email" placeholder="Your Email" required>
+            <textarea name="message" id="contact-message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" id="contact-submit">Submit Message</button>
+        </form>
+    </div>
+
+    </div>
+
+    <script  src="../js_files/product_updation.js" type="text/javascript"defer ></script>
+    <script  src="../js_files/buyJs.js" type="text/javascript" defer></script>
+
+</body>
+
+</html>
